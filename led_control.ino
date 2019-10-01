@@ -31,9 +31,6 @@ void loop()
     R = red.toInt();
     G = green.toInt();
     B = blue.toInt();
-    Serial.print(R);
-    Serial.print(G);
-    Serial.print(B);
     color_led(R,G,B);
   } 
 }
