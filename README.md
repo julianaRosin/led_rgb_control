@@ -40,4 +40,15 @@ The function responsible for reading serial port values sent via GUI is:
 **GUI**
 ![](app.png)
 
+## How to use?
 
+Transfer the sample code available at **led_control.ino** to your Arduino. Then just run the application.
+
+`` 
+     python3 app.py
+`` 
+
+## Modules
+
+* python3-tk
+* pyserial
