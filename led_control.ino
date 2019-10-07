@@ -1,3 +1,9 @@
+/***********************************************************
+File name: 09_rgbLed.ino
+Description: Control the RGB LED
+Author: Juliana
+ 
+*************************************************************/
 String cor;
 String red;
 String green;
@@ -7,9 +13,9 @@ int R,G,B;
 //Function color
 
 void color_led(int r, int g, int b){
-  analogWrite(9,255-b);
-  analogWrite(10,255-g);
-  analogWrite(11,255-r);
+  analogWrite(9,255-b); // PWM signal output
+  analogWrite(10,255-g); // PWM signal output
+  analogWrite(11,255-r); // PWM signal output
 }
  
 void setup()
@@ -31,9 +37,6 @@ void loop()
     R = red.toInt();
     G = green.toInt();
     B = blue.toInt();
-    Serial.print(R);
-    Serial.print(G);
-    Serial.print(B);
     color_led(R,G,B);
   } 
 }
