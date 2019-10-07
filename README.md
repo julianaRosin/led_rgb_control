@@ -28,19 +28,19 @@ D10, D11 pins through a current limiting resistor.
 In this way we can control the color of the RGB LED by the 3 channel PWM signal. The PWM value is chosen via GUI and sent through the serial port. The function that allows to generate a PWM signal in some of the pins is:
 
 **analogWrite**(PIN, VALUE_ANALOG);
-**PIN**: arduino pin number which you want the PWM signal to be generated.
-**VALUE_ANALOG**: value (from 0 to 255), proportional to the Duty Cycle to be generated.
+
+- **PIN**: arduino pin number which you want the PWM signal to be generated.
+
+- **VALUE_ANALOG**: value (from 0 to 255), proportional to the Duty Cycle to be generated.
 
 The function responsible for reading serial port values sent via GUI is:
-**Serial.readString()**: Reads characters from the serial buffer into a String. The function terminates if it times out.
+
+- **Serial.readString()**: Reads characters from the serial buffer into a String. The function terminates if it times out.
 
 **schematic**
 ![](schematic.png)
 
-**GUI**
-![](app.png)
 
-## How to use?
 
 Transfer the sample code available at **led_control.ino** to your Arduino. Then just run the application.
 
